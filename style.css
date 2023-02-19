@@ -13,7 +13,7 @@
 body {
   margin: 0;
   padding: 0;
-  height: 175vh;
+  height: 150vh;
   display: flex;
 }
 
@@ -120,6 +120,7 @@ article {
   display: grid;
   grid-template-columns: 3fr 2fr;
   grid-template-rows: 2fr 5fr;
+  box-shadow: 5px 5px 10px #888888;
 }
 
 #search-bar {
@@ -211,6 +212,7 @@ article {
 }
 
 #projects-section {
+  overflow: hidden;
   grid-row: 1/8;
   width: 90%;
   height: 100%;
@@ -221,11 +223,11 @@ article {
 }
 
 #announcements-section {
-  grid-row: 1/5;
+  grid-row: 1/4;
 }
 
 #trending-section {
-  grid-row: 5/8;
+  grid-row: 4/8;
 }
 
 #projects {
@@ -244,6 +246,7 @@ article {
   border-left: #450d70 10px solid;
   display: flex;
   flex-direction: column;
+  box-shadow: 5px 5px 10px #888888;
 }
 
 .card-text {
@@ -272,4 +275,52 @@ article {
   justify-content: flex-end;
   align-items: center;
   gap: 20px;
+}
+
+.aside-text {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+
+.aside-card {
+  margin: auto;
+  width: 85%;
+  height: 100%;
+  background-color: #f5f3ff;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px #888888;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.aside-header-text {
+  margin: 0;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.aside-paragraph-text {
+  margin: 0;
+  font-size: 13px;
+}
+
+.aside-group {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.aside-group:nth-child(1) {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #333;
+}
+
+.aside-group:nth-child(2) {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #333;
 }
