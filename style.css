@@ -4,10 +4,16 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* Global Style*/
+.container {
+  width: 90%;
+  margin: auto;
+}
+
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 125vh;
   display: flex;
 }
 
@@ -19,9 +25,17 @@ nav {
   flex-direction: column;
 }
 
+#nav-group {
+  position: sticky;
+  top: 1.5rem;
+}
+
 main {
   flex: 7;
   height: 100%;
+  background-color: #cbd5e1;
+  display: flex;
+  flex-direction: column;
 }
 
 i {
@@ -68,4 +82,21 @@ i {
   align-items: center;
   gap: 10px;
   margin-left: 1.5rem;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+.nav-text {
+  cursor: pointer;
+}
+
+section {
+  background-color: #ede9fe;
+  flex: 1;
+}
+
+article {
+  flex: 3;
 }
