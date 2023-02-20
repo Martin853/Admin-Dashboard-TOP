@@ -13,7 +13,7 @@
 body {
   margin: 0;
   padding: 0;
-  height: 150vh;
+  height: 185vh;
   display: flex;
 }
 
@@ -120,7 +120,6 @@ article {
   display: grid;
   grid-template-columns: 3fr 2fr;
   grid-template-rows: 2fr 5fr;
-  box-shadow: 5px 5px 10px #888888;
 }
 
 #search-bar {
@@ -204,123 +203,163 @@ article {
 }
 
 #article-items {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 4rem repeat(6, 1fr);
-}
-
-#projects-section {
-  overflow: hidden;
-  grid-row: 1/8;
-  width: 90%;
+  width: 95%;
   height: 100%;
   margin: auto;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 100%;
+}
+
+#aside-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 #announcements-section {
-  grid-row: 1/4;
-}
-
-#trending-section {
-  grid-row: 4/8;
-}
-
-#projects {
-  height: 90%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 225px;
-  gap: 25px;
-}
-
-.card {
-  width: 100%;
-  height: 225;
-  background-color: #f5f3ff;
-  border-radius: 10px;
-  border-left: #450d70 10px solid;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 5px 5px 10px #888888;
-}
-
-.card-text {
-  flex: 2;
-  width: 80%;
-  margin: 1rem auto 0 auto;
-}
-
-.card-header-text {
-  margin: 0;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.card-paragraph {
-  margin: 0;
-  font-size: 12px;
-  text-align: justify;
-}
-
-.card-buttons {
-  width: 80%;
-  margin: 0 auto 1rem auto;
   flex: 1;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 20px;
-}
-
-.aside-text {
-  margin-left: auto;
-  margin-right: auto;
-  width: 85%;
-}
-
-.aside-card {
-  margin: auto;
-  width: 85%;
+  width: 90%;
   height: 100%;
+  margin: auto;
+  overflow: none;
+}
+
+#announcements-card {
+  width: 100%;
+  height: 80%;
+  border-radius: 12px;
   background-color: #f5f3ff;
-  border-radius: 15px;
-  box-shadow: 5px 5px 10px #888888;
+  box-shadow: 5px 5px 10px #7d7d80;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.aside-header-text {
+.announcement-row {
+  width: 90%;
+  margin: auto;
+}
+
+.announcement-border {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #9a9a9a;
+}
+
+.announcement-row > h1 {
+  font-size: 16px;
+  font-weight: bold;
   margin: 0;
-  font-size: 15px;
+}
+
+.announcement-row > p {
+  font-size: 12px;
+  margin: 0;
+}
+
+#trending-section {
+  flex: 1;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  overflow: none;
+}
+
+#projects-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+#project-header {
+  flex: 0.5;
+}
+
+#card-groups {
+  flex: 10;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 95%;
+  height: 100%;
+  background-color: #f5f3ff;
+  border-left: #450d70 8px solid;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px #7d7d80;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-text {
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+  flex: 3;
+}
+
+.card-text > h1 {
+  margin: 0;
+  font-size: 16px;
   font-weight: bold;
 }
 
-.aside-paragraph-text {
+.card-text > p {
   margin: 0;
-  font-size: 13px;
+  font-size: 14px;
 }
 
-.aside-group {
-  width: 90%;
-  margin: auto;
+.card-buttons {
+  margin-right: 1rem;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#trending-card {
+  width: 100%;
+  height: 80%;
+  border-radius: 12px;
+  background-color: #f5f3ff;
+  box-shadow: 5px 5px 10px #7d7d80;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.user {
+  width: 100%;
+  display: flex;
+}
+
+.user-profile-image {
+  padding-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-username {
+  margin-left: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
-.aside-group:nth-child(1) {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #333;
+.user-username > h1 {
+  font-size: 16px;
+  margin: 0;
 }
 
-.aside-group:nth-child(2) {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #333;
+.user-username > h2 {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
 }
