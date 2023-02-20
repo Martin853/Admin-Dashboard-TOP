@@ -13,7 +13,7 @@
 body {
   margin: 0;
   padding: 0;
-  height: 150vh;
+  height: 185vh;
   display: flex;
 }
 
@@ -207,18 +207,159 @@ article {
   height: 100%;
   margin: auto;
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 4rem repeat(6, 1fr);
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 100%;
 }
 
-#projects-section {
-  grid-row: 1/8;
+#aside-section {
+  display: flex;
+  flex-direction: column;
 }
 
 #announcements-section {
-  grid-row: 1/5;
+  flex: 1;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  overflow: none;
+}
+
+#announcements-card {
+  width: 100%;
+  height: 80%;
+  border-radius: 12px;
+  background-color: #f5f3ff;
+  box-shadow: 5px 5px 10px #7d7d80;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.announcement-row {
+  width: 90%;
+  margin: auto;
+}
+
+.announcement-border {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #9a9a9a;
+}
+
+.announcement-row > h1 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.announcement-row > p {
+  font-size: 12px;
+  margin: 0;
 }
 
 #trending-section {
-  grid-row: 5/8;
+  flex: 1;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  overflow: none;
+}
+
+#projects-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+#project-header {
+  flex: 0.5;
+}
+
+#card-groups {
+  flex: 10;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 95%;
+  height: 100%;
+  background-color: #f5f3ff;
+  border-left: #450d70 8px solid;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px #7d7d80;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-text {
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+  flex: 3;
+}
+
+.card-text > h1 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.card-text > p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.card-buttons {
+  margin-right: 1rem;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#trending-card {
+  width: 100%;
+  height: 80%;
+  border-radius: 12px;
+  background-color: #f5f3ff;
+  box-shadow: 5px 5px 10px #7d7d80;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.user {
+  width: 100%;
+  display: flex;
+}
+
+.user-profile-image {
+  padding-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-username {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-username > h1 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.user-username > h2 {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
 }
