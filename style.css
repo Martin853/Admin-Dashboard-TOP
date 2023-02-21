@@ -363,3 +363,187 @@ article {
   font-weight: normal;
   margin: 0;
 }
+
+@media all and (max-width: 1200px) {
+  #profile-picture {
+    padding-right: 1rem;
+  }
+
+  #username {
+    font-size: 20px;
+  }
+
+  #section-items {
+    grid-template-columns: 65% 35%;
+  }
+
+  #section-buttons {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #card-groups {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #announcements-section > h1 {
+    font-size: 20px;
+    margin: 0.5px;
+  }
+
+  #article-items {
+    grid-template-columns: 100%;
+    grid-template-rows: 2fr 1fr;
+  }
+
+  #aside-section {
+    flex-direction: row;
+  }
+
+  #announcements-section {
+    height: 100%;
+  }
+
+  #trending-section > h1 {
+    font-size: 20px;
+    margin: 0.5px;
+  }
+
+  #announcements-card {
+    width: 95%;
+  }
+
+  .announcement-row > p {
+    font-size: 11px;
+  }
+
+  .nav-item {
+    font-size: 10px;
+  }
+
+  #group-one > .nav-item-group > .nav-text {
+    font-size: 10px;
+  }
+
+  #group-two > .nav-item-group > .nav-text {
+    font-size: 10px;
+  }
+
+  #profile-section {
+    gap: 0.8rem;
+  }
+}
+
+@media all and (max-width: 750px) {
+  #profile-picture {
+    padding-right: 1rem;
+  }
+
+  #username {
+    font-size: 16px;
+  }
+
+  #section-items {
+    grid-template-columns: 65% 35%;
+  }
+
+  #section-buttons {
+    margin: 10px 0 10px 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #card-groups {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #announcements-section > h1 {
+    font-size: 20px;
+    margin: 0.5px;
+  }
+
+  #article-items {
+    grid-template-columns: 100%;
+    grid-template-rows: 2fr 1fr;
+  }
+
+  #aside-section {
+    flex-direction: row;
+  }
+
+  #announcements-section {
+    height: 100%;
+  }
+
+  #trending-section > h1 {
+    font-size: 20px;
+    margin: 0.5px;
+  }
+
+  #announcements-card {
+    width: 95%;
+  }
+
+  .announcement-row > p {
+    font-size: 9px;
+  }
+
+  .nav-item {
+    font-size: 10px;
+  }
+
+  .nav-text {
+    display: none;
+  }
+
+  nav {
+    flex: 0.5;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .nav-item-group {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-item-group {
+    margin: 10px 0 10px 0;
+  }
+
+  #group-one > .nav-item-group > .nav-text {
+    font-size: 10px;
+  }
+
+  #group-two > .nav-item-group > .nav-text {
+    font-size: 10px;
+  }
+
+  #profile-section {
+    gap: 0.8rem;
+  }
+
+  #profile-username {
+    display: none;
+  }
+
+  .btn {
+    height: 2rem;
+    width: 5rem;
+  }
+
+  #user-welcome-section {
+    justify-self: start;
+  }
+
+  .card-text > p {
+    font-size: 10px;
+  }
+
+  article {
+  }
+}
